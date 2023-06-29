@@ -1,0 +1,28 @@
+// Sample array
+var array = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49];
+
+// Variable to store the maximum value
+var max = array[0];
+
+// Variable to store the minimum value
+var min = array[0];
+
+// Iterate through each element in the array
+for (var i = 1; i < array.length; i++) {
+  // Check if the current element is greater than the maximum value
+  if (array[i] > max) {
+    max = array[i];
+  }
+
+  // Check if the current element is smaller than the minimum value
+  if (array[i] < min) {
+    min = array[i];
+  }
+}
+
+// Display the original array
+console.log("Original Array: " + array);
+
+// Display the maximum and minimum values
+console.log("Maximum value for the above array = " + max);
+console.log("Minimum value for the above array = " + min);

@@ -1,0 +1,21 @@
+// Prompt the user to input the first number
+var firstNumber = parseFloat(prompt("Input first number:"));
+
+// Prompt the user to input the second number
+var secondNumber = parseFloat(prompt("Input second number:"));
+
+// Prompt the user to input the third number
+var thirdNumber = parseFloat(prompt("Input third number:"));
+
+// Check if the numbers are in increasing order
+if (firstNumber < secondNumber && secondNumber < thirdNumber) {
+  console.log("Increasing order.");
+}
+// Check if the numbers are in decreasing order
+else if (firstNumber > secondNumber && secondNumber > thirdNumber) {
+  console.log("Decreasing order.");
+}
+// If the above conditions are not met, then neither increasing nor decreasing order
+else {
+  console.log("Neither increasing nor decreasing order.");
+}

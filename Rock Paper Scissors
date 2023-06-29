@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock, Paper, Scissors</title>
+  <style>
+    button {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rock, Paper, Scissors</h1>
+  <div>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+  </div>
+  <h2 id="result"></h2>
+  
+  <script>
+    // Function to generate computer's choice
+    function computerPlay() {
+      const choices = ["rock", "paper", "scissors"];
+      const randomIndex = Math.floor(Math.random() * choices.length);
+      return choices[randomIndex];
+    }
+    
+    // Function to play a round
+    function playRound(playerSelection, computerSelection) {
+      playerSelection = playerSelection.toLowerCase();
+      
+      if (playerSelection === computerSelection) {
+        return "It's a tie!";
+      } else if (
+        (playerSelection === "rock" && computerSelection === "scissors") ||
+        (playerSelection === "paper" && computerSelection === "rock") ||
+        (playerSelection === "scissors" && computerSelection === "paper")
+      ) {
+        return "You win!";
+      } else {
+        return "Computer wins!";
+      }
+    }
+    
+    // Function to display the result
+    function displayResult(result) {
+      const resultElement = document.getElementById("result");
+      resultElement.textContent = result;
+    }
+    
+    // Function to handle button clicks
+    function handleClick(e) {
+      const playerSelection = e.target.id;
+      const computerSelection = computerPlay();
+      const result = playRound(playerSelection, computerSelection);
+      displayResult(result);
+    }
+    
+    // Add event listeners to buttons
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(button => button.addEventListener("click", handleClick));
+  </script>
+</body>
+</html>

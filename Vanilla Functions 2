@@ -1,0 +1,28 @@
+// Function to calculate the factorial of a number
+function calculateFactorial(number) {
+  // Check if the number is negative
+  if (number < 0) {
+    return "Factorial is not defined for negative numbers.";
+  }
+  
+  // Base case: factorial of 0 is 1
+  if (number === 0) {
+    return 1;
+  }
+  
+  // Variable to store the factorial
+  var factorial = 1;
+  
+  // Multiply all numbers from 1 to the given number
+  for (var i = 1; i <= number; i++) {
+    factorial *= i;
+  }
+  
+  return factorial;
+}
+
+// Test the function
+var number = 6;
+var factorial = calculateFactorial(number);
+
+console.log("The factorial of " + number + " is: " + factorial);

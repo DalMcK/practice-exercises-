@@ -1,0 +1,27 @@
+// Function to check if a number is prime
+function checkPrime(number) {
+  // Check for negative numbers
+  if (number < 0) {
+    return "Negative numbers cannot be prime.";
+  }
+  
+  // 1 and 0 are not prime numbers
+  if (number === 0 || number === 1) {
+    return "Not a prime number.";
+  }
+  
+  // Check for divisibility
+  for (var i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return "Not a prime number.";
+    }
+  }
+  
+  return "Prime number.";
+}
+
+// Test the function
+var number = 17;
+var result = checkPrime(number);
+
+console.log(number + " is: " + result);

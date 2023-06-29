@@ -1,0 +1,21 @@
+// Prompt the user to input the first number
+var firstNumber = parseFloat(prompt("Input first number:"));
+
+// Prompt the user to input the second number
+var secondNumber = parseFloat(prompt("Input second number:"));
+
+// Prompt the user to input the third number
+var thirdNumber = parseFloat(prompt("Input third number:"));
+
+// Check if all three numbers are equal
+if (firstNumber === secondNumber && secondNumber === thirdNumber) {
+  console.log("All numbers are equal.");
+}
+// Check if all three numbers are different
+else if (firstNumber !== secondNumber && secondNumber !== thirdNumber && firstNumber !== thirdNumber) {
+  console.log("All numbers are different.");
+}
+// If the above conditions are not met, then neither all are equal or different
+else {
+  console.log("Neither all are equal or different.");
+}

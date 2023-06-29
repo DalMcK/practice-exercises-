@@ -1,0 +1,11 @@
+// Prompt the user to input the first number
+var firstNumber = parseFloat(prompt("Input the first number:"));
+
+// Prompt the user to input the second number
+var secondNumber = parseFloat(prompt("Input the second number:"));
+
+// Perform the division operation
+var result = firstNumber / secondNumber;
+
+// Print the result
+console.log("The division of the first number and the second number is: " + result);

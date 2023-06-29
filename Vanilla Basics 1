@@ -1,0 +1,15 @@
+// Operation a: -5 + 8 * 6
+var resultA = -5 + 8 * 6;
+console.log(resultA);
+
+// Operation b: (55+9) % 9
+var resultB = (55 + 9) % 9;
+console.log(resultB);
+
+// Operation c: 20 + -3*5 / 8
+var resultC = 20 + -3 * 5 / 8;
+console.log(resultC);
+
+// Operation d: 5 + 15 / 3 * 2 - 8 % 3
+var resultD = 5 + 15 / 3 * 2 - 8 % 3;
+console.log(resultD);

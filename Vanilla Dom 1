@@ -1,0 +1,11 @@
+// Function to change the style of the paragraph text
+function js_style() {
+  // Get the paragraph element using its id
+  var paragraph = document.getElementById("text");
+  
+  // Change the style properties of the paragraph
+  paragraph.style.fontFamily = "Arial";
+  paragraph.style.fontSize = "20px";
+  paragraph.style.color = "blue";
+  paragraph.style.fontWeight = "bold";
+}

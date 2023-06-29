@@ -1,0 +1,11 @@
+// Prompt the user to input a number
+var number = parseInt(prompt("Input a number:"));
+
+// Iterate from 1 to 10
+for (var i = 1; i <= 10; i++) {
+  // Multiply the number with the current iteration value
+  var result = number * i;
+  
+  // Display the multiplication table entry
+  console.log(number + " x " + i + " = " + result);
+}

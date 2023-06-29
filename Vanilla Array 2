@@ -1,0 +1,17 @@
+// Sample array
+var array = [20, 30, 25, 35, -16, 60, -100];
+
+// Variable to store the sum of array elements
+var sum = 0;
+
+// Iterate through each element in the array
+for (var i = 0; i < array.length; i++) {
+  // Add the current element to the sum
+  sum += array[i];
+}
+
+// Calculate the average by dividing the sum by the number of elements
+var average = sum / array.length;
+
+// Display the average value
+console.log("Average value of the array elements is: " + average.toFixed(1) + ".");
